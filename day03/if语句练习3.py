@@ -10,5 +10,5 @@ if sex == '女生':
         print('我喜欢女生')
     else:
         print('姐弟恋也很好哦')
-if sex == '男生':
+else:
     print('一起来搞基')
