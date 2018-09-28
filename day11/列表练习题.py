@@ -40,13 +40,33 @@ print(names[2:10:2])
 print(names[-3:])  #只能从左到右进行取数
 #10、循环names1取出所有的索引值，并打印所有元素
 names1 = ['jianghu','jiangxi','hunan','hubei','shenzhen','globel']
+# count = 0
+# for i in names1:
+#     print(count,i)
+#     count += 1
+# # 可以使用enumerate这种方法枚举出所有的索引值和元素值
+#
+# # for i in enumerate(names1):
+# #     print(i) #结果不想要括号可以设置两个变量，index和i
+# for index,i in enumerate(names1):
+#     print(index,i) #结果不想要括号可以设置两个变量，index和i
+
+# 11、循环names1列表并且打印每个元素的索引值和、元素，当索引值为偶数时把对应的元素值改为-1；
 count = 0
 for i in names1:
+    if count % 2 == 0:
+        i = -1
     print(count,i)
     count += 1
-# 可以使用enumerate这种方法枚举出所有的索引值和元素值
 
-# for i in enumerate(names1):
-#     print(i) #结果不想要括号可以设置两个变量，index和i
-for index,i in enumerate(names1):
-    print(index,i) #结果不想要括号可以设置两个变量，index和i
+#12、List1下面有,3个2，返回第2个2的索引值，不要人肉数，要动态找，（提示，如果找到第2个2，再此基础上再找第2个2）
+List1 = [1,2,3,4,2,5,6,2]
+count = 0
+for i in List1:
+    if i == 2:
+
+        count += 1
+
+
+
+
