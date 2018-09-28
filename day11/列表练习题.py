@@ -37,4 +37,16 @@ print(names[6:10])
 # 8、取出索引[2,10]的值，并且步长为2
 print(names[2:10:2])
 # 9、取出列表的最后三个元素
-print(names[-4:-1])  #只能从左到右进行取数
+print(names[-3:])  #只能从左到右进行取数
+#10、循环names1取出所有的索引值，并打印所有元素
+names1 = ['jianghu','jiangxi','hunan','hubei','shenzhen','globel']
+count = 0
+for i in names1:
+    print(count,i)
+    count += 1
+# 可以使用enumerate这种方法枚举出所有的索引值和元素值
+
+# for i in enumerate(names1):
+#     print(i) #结果不想要括号可以设置两个变量，index和i
+for index,i in enumerate(names1):
+    print(index,i) #结果不想要括号可以设置两个变量，index和i
